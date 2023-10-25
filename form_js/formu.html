@@ -59,14 +59,14 @@
             <!--div dedicado a lo que es el input de nombre-->
             <div class="form-group">
                 <label for="nombre"></label>
-                <input type="text" id="nombre" class="form-control" placeholder="Nombre" autocomplete="given-name" required pattern="[A-z]">
+                <input type="text" id="nombre" class="form-control" placeholder="Nombre" autocomplete="given-name" required pattern="[A-Za-z]">
                     <small class="form-text text-muted">debe tener un caracter y no admite numeros </small>
             </div>
 
               <!--div dedicado a lo que es el input de apellido-->
             <div class="form-group">
                 <label for="apellido"></label>
-                <input type="text" id="apellido" class="form-control" placeholder="apellido" autocomplete="given-name" required pattern="[A-z]">
+                <input type="text" id="apellido" class="form-control" placeholder="apellido" autocomplete="given-name" required pattern="[A-Za-z]">
                 <small class="form-text text-muted">debe ingresar al menos un caracter y solo letras </small>
 
             </div>
@@ -74,21 +74,21 @@
               <!--div dedicado a lo que es el input de telefono-->
             <div class="form-group">
                 <label for="telefono"></label>
-                <input type="number" id="telefono" class="form-control" placeholder="telefono" autocomplete="given-name"  >
+                <input type="number" id="telefono" class="form-control" placeholder="telefono" autocomplete="given-name"    min="222222222" max="999999999"  >
                 <small class="form-text text-muted">debe ingresar un numero mayor a 22222222 y menor que 999999999 </small>
             </div>
 
               <!--div dedicado a lo que es el input de carrera-->
             <div class="form-group">
                 <label for="carrera"></label>
-                <input type="text" id="carrera" class="form-control" placeholder="carrera" autocomplete="given-name " required min="22222222" max="999999999">
+                <input type="text" id="carrera" class="form-control" placeholder="carrera" autocomplete="given-name " required pattern="[A-Za-z]">
                 <small class="form-text text-muted">ingrese una carrera valida. </small>
             </div>
 
             <!--div dedicado a lo que es el input de edad-->
             <div class="form-group">
                 <label for="edad"></label>
-                <input type="number" id="edad" class="form-control" placeholder="edad" autocomplete="given-name" >
+                <input type="number" id="edad" class="form-control" placeholder="edad" autocomplete="given-name" required min="17" max="60" >
                 <small class="form-text text-muted">debe tener una edad no menor a 17 y menor que 60 </small>
             </div>
 
