@@ -43,9 +43,10 @@
             </div>
     </nav>
     </div>
+    
     <div id="img">
         <img src="assets\img\portada.jpeg" id="img_portada">
-        <p id="parrafo" class=" text-center">Si tienes dudas, usa nuestro formulario de contacto para realizar las
+        <p class="card">Si tienes dudas, usa nuestro formulario de contacto para realizar las
             preguntas que necesites. Recuerda que estamos para ayudarte y ofrecerte una educación de calidad.</p>
     </div>
 
@@ -58,32 +59,39 @@
             <!--div dedicado a lo que es el input de nombre-->
             <div class="form-group">
                 <label for="nombre"></label>
-                <input type="text" id="nombre" class="form-control" placeholder="Nombre" autocomplete="given-name"
-                    required>
+                <input type="text" id="nombre" class="form-control" placeholder="Nombre" autocomplete="given-name" required pattern="[A-z]">
+                    <small class="form-text text-muted">debe tener un caracter y no admite numeros </small>
             </div>
+
               <!--div dedicado a lo que es el input de apellido-->
             <div class="form-group">
                 <label for="apellido"></label>
-                <input type="text" id="apellido" class="form-control" placeholder="apellido" autocomplete="given-name"
-                    required>
+                <input type="text" id="apellido" class="form-control" placeholder="apellido" autocomplete="given-name" required pattern="[A-z]">
+                <small class="form-text text-muted">debe ingresar al menos un caracter y solo letras </small>
+
             </div>
+
               <!--div dedicado a lo que es el input de telefono-->
             <div class="form-group">
                 <label for="telefono"></label>
-                <input type="text" id="telefono" class="form-control" placeholder="telefono" autocomplete="given-name"
-                    required>
+                <input type="number" id="telefono" class="form-control" placeholder="telefono" autocomplete="given-name"  >
+                <small class="form-text text-muted">debe ingresar un numero mayor a 22222222 y menor que 999999999 </small>
             </div>
+
               <!--div dedicado a lo que es el input de carrera-->
             <div class="form-group">
                 <label for="carrera"></label>
-                <input type="text" id="carrera" class="form-control" placeholder="carrera" autocomplete="given-name"
-                    required>
+                <input type="text" id="carrera" class="form-control" placeholder="carrera" autocomplete="given-name " required min="22222222" max="999999999">
+                <small class="form-text text-muted">ingrese una carrera valida. </small>
             </div>
+
             <!--div dedicado a lo que es el input de edad-->
             <div class="form-group">
                 <label for="edad"></label>
-                <input type="text" id="edad" class="form-control" placeholder="edad" autocomplete="given-name" required>
+                <input type="number" id="edad" class="form-control" placeholder="edad" autocomplete="given-name" >
+                <small class="form-text text-muted">debe tener una edad no menor a 17 y menor que 60 </small>
             </div>
+
             <!--div dedicado a lo que es el input de mensaje del usuario --> 
             <div class="mb-3" id="text">
                 <textarea class="form-control" placeholder="Mensaje" rows="2"></textarea>
@@ -92,10 +100,6 @@
             <div class="col-lg fs-6 -px-5 m-4">
 
                 <button class="btn btn-primary w-100 py-2" onclick=datos() id="texto" type="submit" 7>enviar </button>
-
-
-
-
             </div>
         </form>
     </div>
