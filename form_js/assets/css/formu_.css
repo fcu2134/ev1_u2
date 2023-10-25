@@ -1,5 +1,6 @@
 body{
-    margin: 0px auto    ;
+    margin: 0px auto  ;
+    font-family: Comic Sans MS;
     
     
 }
@@ -23,6 +24,7 @@ form[role="search"] {
 #img{
     width: 110%;
     height: 520px;
+    text-align: center;
 
 }
 
@@ -42,11 +44,7 @@ form[role="search"] {
     height: 300px;
 }
 
-#parrafo{
-    left:10%;
 
-    
-}
 
 /* pongo las 4 id que cree en el formulario y le doy el diseño a todos en uno ,se puede hacer por separado pero opte por la comidad de lineas*/
 #nombre,#apellido,#telefono,#carrera,#edad,#texto,#formul{
@@ -57,5 +55,5 @@ form[role="search"] {
     padding: 2%;
     border: 10%;
     
+    
 }
-
