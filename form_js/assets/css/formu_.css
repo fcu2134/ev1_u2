@@ -1,0 +1,61 @@
+body{
+    margin: 0px auto    ;
+    
+    
+}
+
+form[role="search"] {
+    width: 30%; 
+}
+
+
+#container {
+    top:30px;
+    max-width: 40%;
+    margin-left: 33% ;
+    
+    box-shadow: 0 0 5px rgba(212, 211, 211, 0.1);
+    
+}
+#img1{
+    width: 70px;
+}
+#img{
+    width: 110%;
+    height: 520px;
+
+}
+
+
+#formulario{
+   
+    margin-top: -25%;
+}
+
+    
+    
+    
+    
+
+#img_portada {
+    width: 100%;
+    height: 300px;
+}
+
+#parrafo{
+    left:10%;
+
+    
+}
+
+/* pongo las 4 id que cree en el formulario y le doy el diseño a todos en uno ,se puede hacer por separado pero opte por la comidad de lineas*/
+#nombre,#apellido,#telefono,#carrera,#edad,#texto,#formul{
+    display: inline-block;
+    width: 100%;
+   
+    margin: 1%;
+    padding: 2%;
+    border: 10%;
+    
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+
+    <title>Formulario con JavaScript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/formu_.css" type="text/css">
+</head>
+
+<body>
+    <!--equivale a todo el encabezado ,primera parte la foto de cft-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="assets\img\descargar.png" id="img1"></a>
+    <!--segunda parte del encabezado.-->
+            <div class="collapse navbar-collapse" id="soporte de navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">admision</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://intranet.cftestatalaricayparinacota.cl"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="true">carreras
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contactanos </a>
+                    </li>
+                    </a>
+                </ul>
+            
+                <form class="d-flex" role="search">
+                    <input class="form-control me-4 fs-6 " type="search" placeholder="busca tu carrera"
+                        aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+    </nav>
+    </div>
+    <div id="img">
+        <img src="assets\img\portada.jpeg" id="img_portada">
+        <p id="parrafo" class=" text-center">Si tienes dudas, usa nuestro formulario de contacto para realizar las
+            preguntas que necesites. Recuerda que estamos para ayudarte y ofrecerte una educación de calidad.</p>
+    </div>
+
+    <div id="container">
+
+
+        <!-- Empiezo con el formulario en donde se ingresará toda la información requerida y ejecutar el javascript -->
+        <form id="formulario" class="form-label">
+            <h1 class="col-lg text-center">Formulario</h1>
+            <!--div dedicado a lo que es el input de nombre-->
+            <div class="form-group">
+                <label for="nombre"></label>
+                <input type="text" id="nombre" class="form-control" placeholder="Nombre" autocomplete="given-name"
+                    required>
+            </div>
+              <!--div dedicado a lo que es el input de apellido-->
+            <div class="form-group">
+                <label for="apellido"></label>
+                <input type="text" id="apellido" class="form-control" placeholder="apellido" autocomplete="given-name"
+                    required>
+            </div>
+              <!--div dedicado a lo que es el input de telefono-->
+            <div class="form-group">
+                <label for="telefono"></label>
+                <input type="text" id="telefono" class="form-control" placeholder="telefono" autocomplete="given-name"
+                    required>
+            </div>
+              <!--div dedicado a lo que es el input de carrera-->
+            <div class="form-group">
+                <label for="carrera"></label>
+                <input type="text" id="carrera" class="form-control" placeholder="carrera" autocomplete="given-name"
+                    required>
+            </div>
+            <!--div dedicado a lo que es el input de edad-->
+            <div class="form-group">
+                <label for="edad"></label>
+                <input type="text" id="edad" class="form-control" placeholder="edad" autocomplete="given-name" required>
+            </div>
+            <!--div dedicado a lo que es el input de mensaje del usuario --> 
+            <div class="mb-3" id="text">
+                <textarea class="form-control" placeholder="Mensaje" rows="2"></textarea>
+            </div>
+
+            <div class="col-lg fs-6 -px-5 m-4">
+
+                <button class="btn btn-primary w-100 py-2" onclick=datos() id="texto" type="submit" 7>enviar </button>
+
+
+
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Defino la ubicación de mi JavaScript en donde manejo toda la información -->
+    <script src="assets\js\formu_js.js"></script>
+</body>
+
+</html>
