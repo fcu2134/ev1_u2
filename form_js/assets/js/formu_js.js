@@ -9,10 +9,11 @@ function datos() {
 
     if (nombre.length < 3) {
         document.getElementById("nombre").innerHTML = "Debes ingresar al menos 3 caracteres";
-        alert("almenos 3 caracteres");
+        alert(" nombre debe tener almenos 3 caracteres");
         valid = false;
     } else {
         document.getElementById("nombre").innerHTML = "";
+        console.log("nombre:",nombre)
     }
 
     if (apellido.length < 3) {
@@ -21,14 +22,16 @@ function datos() {
         valid = false;
     } else {
         document.getElementById("apellido").innerHTML = "";
+        console.log("apellido:",apellido)
     }
 
-    if (!/^\d{9}$/.test(telefono)) {
+    if  (!isNaN(telefono) && telefono < 222222222 && telefono > 999999999) {
         document.getElementById("telefono").innerHTML = "Ingresa un número de teléfono válido (9 dígitos)";
-        alert("revise la cantidad de digitos ");
+        alert("revise la cantidad de digitos del telefono  ");
         valid = false;
     } else {
         document.getElementById("telefono").innerHTML = "";
+        console.log("telefono:",telefono)
     }
 
     if (carrera.length < 3) {
@@ -37,14 +40,16 @@ function datos() {
         valid = false;
     } else {
         document.getElementById("carrera").innerHTML = "";
+        console.log("carrera:",carrera)
     }
 
-    if (isNaN(edad) || edad < 0 || edad > 120) {
+    if (isNaN(edad) || edad < 17 || edad > 60) {
         document.getElementById("edad").innerHTML = "Ingresa una edad válida";
         alert("ingrese una edad válida");
         valid = false;
     } else {
         document.getElementById("edad").innerHTML = "";
+        console.log("edad:",edad)
     }
 
     if (valid) {
